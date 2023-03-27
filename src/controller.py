@@ -2,7 +2,7 @@ import httpx
 import asyncio
 
 
-def sort_by_id(movies: list) -> list:
+def sort_by_id(movies: list) -> None:
     return movies.sort(key=lambda x: x['id'])
 
 async def get_character_name(client: httpx.AsyncClient, url: str) -> str:
